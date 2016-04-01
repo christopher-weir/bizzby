@@ -1,0 +1,51 @@
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+@include keyframes(slide-down) {
+    0% {
+        opacity: 0;
+        // -webkit-transform: translateX(40px);
+        // transform: translateX(40px);
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease
+    }
+
+    100% {
+        opacity: 1;
+        // -webkit-transform: none;
+        // transform: none
+    }
+}
