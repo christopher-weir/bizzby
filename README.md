@@ -14,7 +14,7 @@ Dependencies: node, npm, gulp, mocha
 <br />
 ##### Clone the repo onto your computer.
 
-    $ git clone https://github.com/christopher-weir/innie.git
+    $ git clone https://github.com/christopher-weir/bizzby.git
 <br />
 ##### Npm Install
 
